@@ -230,6 +230,8 @@ Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, d
 
 _Fügen Sie einen Screenshot mit der Ausgabe und den Code in die Abgabe ein._
 
+![MicrosoftTeams-image](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/2d294d0c-bd42-4a3b-a3ca-b203d149efc8)
+
 ## Aufgabe 5. NP-vollständig
 Ein cleverer Student der ZHAW findet in der Zukunft für ein bekanntes NP-vollständiges Problem P1 einen Lösungsalgorithmus, der nur polynomielle Zeit benötigt. Was würde das bedeuten?
 
