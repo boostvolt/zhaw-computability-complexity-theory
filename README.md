@@ -1,4 +1,60 @@
-## Aufgabe 4. Collatz-Zahlen.
+## Aufgabe 1. LOOP-Programme.
+Erstellen Sie LOOP-Programme (ohne die Verwendung von Makros), welche folgende Funktionen berechnen:
+1. f(x,y)=max(y,y)
+
+```
+x0 = x2 + 0
+```
+
+3. g(x,y,z)=10z+|x−3y|
+
+```
+Loop 10 Do
+  Loop x3 Do
+    x0 = x0 + 1
+  End
+End;
+
+Loop x2 Do
+  x4 = x4 + 3
+End;
+x5 = x1 + 0;
+Loop x4 Do
+  x5 = x5 - 1
+End;
+Loop x1 Do
+  x4 = x4 -1
+End;
+Loop x4 Do
+  x5 = x5 + 1
+End;
+x6 = x5 + 0;
+
+Loop x6 Do
+  x0 = x0 + 1
+End
+```
+
+4. h(x,y)=xy
+
+```
+x0 = x0 + 1;
+Loop x2 Do
+  x4 = x0 + 0;
+  x0 = x5 + 0;
+  Loop x1 Do
+    Loop x4 Do
+      x0 = x0 + 1
+    End
+  End
+End
+```
+
+_Hinweis: Bei LOOP Programmen werden negative Zahlen (egal wo) immer und automatisch auf
+0 gesetzt._
+
+
+## Aufgabe 4. Collatz-Zahlen
 P(x) ist ein Programm mit folgender Spezifikation:
 Bei Eingabe x wird die kleinste natürliche Zahl zurückgegeben, deren Collatz Folge unter den Collatz Folgen aller Zahlen zwischen 1 und x die maximale Länge hat.
 
