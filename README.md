@@ -3,6 +3,7 @@ P(x) ist ein Programm mit folgender Spezifikation:
 Bei Eingabe x wird die kleinste natürliche Zahl zurückgegeben, deren Collatz Folge unter den Collatz Folgen aller Zahlen zwischen 1 und x die maximale Länge hat.
 
 1. Schreiben Sie zwei Varianten des Programms P, eines ohne und eines mit Optimie- rungen (bei ”ohne Optimierung” gehen Sie Zahl für Zahl durch und notieren sich jeweils die Länge der Folge). Erläutern Sie kurz Ihre Optimierungsansätze.
+
 Hier ist eine Implementierung von P ohne Optimierung:
 ```java
 public static int P(int x) {
