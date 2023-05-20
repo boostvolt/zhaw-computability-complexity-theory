@@ -237,6 +237,8 @@ Hier sind die Rückgabewerte für die verschiedenen Werte von x:
 | 10'000'000  |	8'400'511         |	8'400'511         |
 | 90'000'000  |	-	                | 63'728'127        |
 
+![MicrosoftTeams-image (4)](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/8a3c5cf8-9dc2-4817-9bd0-f691bbf6e8f0)
+
 Die Funktion ohne Optimierung benötigt für x = 90'000'000 zu viel Zeit und Speicherplatz und wurde deshalb nicht ausgeführt. Die optimierte Funktion liefert für x = 90'000'000 den Wert 84'376'143.
 
 c) Ist die Menge aller Collatz-Zahlen bis x = 90’000’000 semi-entscheidbar oder sogar entscheidbar? Begründen Sie Ihre Antwort.
