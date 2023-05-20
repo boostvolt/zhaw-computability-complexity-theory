@@ -239,7 +239,7 @@ Das heißt, dass alle Probleme in NP effizient lösbar wären.
 
 In diesem Fall wäre NP = P.
 
-## Polynomzeit-Verifizierer. 
+## Aufgabe 6. Polynomzeit-Verifizierer
 Gegeben: Natürliche Zahlen a1, ..., an und b.
 
 Ausgabe: Die Ausgabe ist JA, falls es eine Teilmenge S ⊆ { a1, ..., an } gibt, sodass Pa∈S = b gilt, und sonst NEIN.
