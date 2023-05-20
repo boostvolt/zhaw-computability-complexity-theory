@@ -95,6 +95,31 @@ While x2 > 0 Do
 End
 ```
 
+## Aufgabe 3. Entscheidbarkeit. 
+Beantworten Sie folgende Aufgaben:
+
+a) ZeigenSiefürbeliebigeSprachenA,B:A≼B⇒A≼B
+
+Angenommen, A ⪯ B gilt, d.h. es gibt eine berechenbare Funktion, die A auf B abbildet. Um zu zeigen, dass ¬A ⪯ ¬B gilt, können wir eine einfache Konstruktion verwenden: 
+
+- Sei f eine berechenbare Funktion, die A auf B abbildet (basierend auf der Annahme A ⪯ B).
+- Nun können wir eine Funktion g definieren, die das Komplement der Ausgaben von f nimmt. Das bedeutet, wenn f(x) = y, dann ist g(x) = ¬y.
+- Es ist offensichtlich, dass g eine berechenbare Funktion ist, da sie einfach die Ausgabe von f negiert.
+- Darüber hinaus bildet g ¬A auf ¬B ab, da wenn x in ¬A liegt, dann liegt f(x) in B (basierend auf A ⪯ B), und folglich ist ¬f(x) = ¬(f(x)) = g(x) in ¬B.
+- Daher haben wir gezeigt, dass ¬A ⪯ ¬B gilt, basierend auf der Annahme A ⪯ B.
+- Es ist wichtig, die Voraussetzung A ⪯ B in der Argumentation zu berücksichtigen.
+
+b) Es sei nun A eine Sprache mit H ≼ A, wobei H das Halteproblem ist.
+Verwenden Sie die in (a) gezeigte Tatsache zum Beweisen, dass A nicht semi-entscheidbar ist.
+
+Angenommen, A wäre semi-entscheidbar. Da H ⪯ A gilt, können wir eine berechenbare Funktion f konstruieren, die das Halteproblem H auf A abbildet. Das bedeutet, für jede Eingabe x erzeugt f(x) eine Turing-Maschine, die M simuliert und genau dann akzeptiert, wenn die ursprüngliche Turing-Maschine auf der Eingabe x hält.
+
+Wenn A semi-entscheidbar ist, können wir eine Turing-Maschine N konstruieren, die das Halteproblem H entscheidet, indem wir f verwenden, um eine Turing-Maschine zu erzeugen, die A simuliert.
+
+Dies steht jedoch im Widerspruch zur Unentscheidbarkeit von H.
+
+Daher kann A nicht semi-entscheidbar sein, wenn H ⪯ A gilt.
+
 ## Aufgabe 4. Collatz-Zahlen
 P(x) ist ein Programm mit folgender Spezifikation:
 Bei Eingabe x wird die kleinste natürliche Zahl zurückgegeben, deren Collatz Folge unter den Collatz Folgen aller Zahlen zwischen 1 und x die maximale Länge hat.
