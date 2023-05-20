@@ -163,32 +163,32 @@ Hier ist eine Implementierung von P mit Optimierung:
 public static int P(int x) {
     int maxLength = 0;
     int maxNumber = 0;
-    int[] memo = new int[x + 1];
+    long[] memo = new long[x + 1];
     Arrays.fill(memo, -1);
     memo[1] = 1;
     for (int i = 1; i <= x; i++) {
-        int length = collatz(i, memo);
+        long length = collatz(i, memo);
         memo[i] = length;
         if (length > maxLength) {
-            maxLength = length;
+            maxLength = (int) length;
             maxNumber = i;
         }
     }
     return maxNumber;
 }
 
-public static int collatz(int n, int[] memo) {
-    if (n <= memo.length - 1 && memo[n] != -1) {
-        return memo[n];
+public static long collatz(long n, long[] memo) {
+    if (n <= memo.length - 1 && memo[(int) n] != -1) {
+        return memo[(int) n];
     }
-    int length;
+    long length;
     if (n % 2 == 0) {
         length = collatz(n / 2, memo) + 1;
     } else {
         length = collatz(3 * n + 1, memo) + 1;
     }
     if (n <= memo.length - 1) {
-        memo[n] = length;
+        memo[(int) n] = length;
     }
     return length;
 }
