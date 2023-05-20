@@ -236,8 +236,6 @@ Hier sind die Rückgabewerte für die verschiedenen Werte von x:
 
 ![Laufzeiten](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/8a3c5cf8-9dc2-4817-9bd0-f691bbf6e8f0)
 
-![Code](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/36aba075-85fa-40f3-8a51-f5cff86849be)
-
 Die Funktion ohne Optimierung benötigt für x = 90'000'000 zu viel Zeit und Speicherplatz und wurde deshalb nicht ausgeführt. Die optimierte Funktion liefert für x = 90'000'000 den Wert 84'376'143.
 
 c) Ist die Menge aller Collatz-Zahlen bis x = 90’000’000 semi-entscheidbar oder sogar entscheidbar? Begründen Sie Ihre Antwort.
@@ -252,6 +250,8 @@ e) Beweisen oder widerlegen Sie informell folgende Aussage: ”Die Zeitkomplexit
 Collatz-Programmes ist nicht bestimmbar”.
 
 Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, dass es keine Möglichkeit gibt, die Laufzeit des Programms für alle Eingaben zu bestimmen. Die Collatz-Vermutung besagt, dass jede Collatz-Folge irgendwann bei 1 endet, aber es ist nicht bekannt, wie lange es dauert, bis dies geschieht. Da die Länge der Collatz-Folge für jede Zahl zwischen 1 und x berechnet werden muss, ist die Laufzeit des Programms für große Werte von x sehr hoch.
+
+![Code](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/36aba075-85fa-40f3-8a51-f5cff86849be)
 
 ## Aufgabe 5. NP-vollständig
 Ein cleverer Student der ZHAW findet in der Zukunft für ein bekanntes NP-vollständiges Problem P1 einen Lösungsalgorithmus, der nur polynomielle Zeit benötigt. Was würde das bedeuten?
