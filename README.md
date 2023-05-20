@@ -209,9 +209,9 @@ Hier sind die Rückgabewerte für die verschiedenen Werte von x:
 | 10'000      |	6'171             |	6'171             |
 | 100'000     |	77'031            |	77'031            |
 | 1'000'000   |	837'799           | 837'799           |
-| 5'000'000   |	4'142'551         | 4'142'551         |
-| 10'000'000  |	6'667'583         |	6'667'583         |
-| 90'000'000  |	-	                | 84'376'143        |
+| 5'000'000   |	3'732'423         | 3'732'423         |
+| 10'000'000  |	8'400'511         |	8'400'511         |
+| 90'000'000  |	-	                | 63'728'127        |
 
 Die Funktion ohne Optimierung benötigt für x = 90'000'000 zu viel Zeit und Speicherplatz und wurde deshalb nicht ausgeführt. Die optimierte Funktion liefert für x = 90'000'000 den Wert 84'376'143.
 
