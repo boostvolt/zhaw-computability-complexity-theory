@@ -7,7 +7,7 @@ Erstellen Sie LOOP-Programme (ohne die Verwendung von Makros), welche folgende F
 x0 = x2 + 0
 ```
 
-3. g(x,y,z)=10z+|x−3y|
+2. g(x,y,z)=10z+|x−3y|
 
 ```
 Loop 10 Do
@@ -36,7 +36,7 @@ Loop x6 Do
 End
 ```
 
-4. h(x,y)=xy
+3. h(x,y)=xy
 
 ```
 x0 = x0 + 1;
