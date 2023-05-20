@@ -201,4 +201,4 @@ Collatz-Programmes ist nicht bestimmbar”.
 
 Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, dass es keine Möglichkeit gibt, die Laufzeit des Programms für alle Eingaben zu bestimmen. Die Collatz-Vermutung besagt, dass jede Collatz-Folge irgendwann bei 1 endet, aber es ist nicht bekannt, wie lange es dauert, bis dies geschieht. Da die Länge der Collatz-Folge für jede Zahl zwischen 1 und x berechnet werden muss, ist die Laufzeit des Programms für große Werte von x sehr hoch.
 
-Fügen Sie einen Screenshot mit der Ausgabe und den Code in die Abgabe ein.
+_Fügen Sie einen Screenshot mit der Ausgabe und den Code in die Abgabe ein._
