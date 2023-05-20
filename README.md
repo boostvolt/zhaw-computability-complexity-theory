@@ -141,9 +141,9 @@ public static int P(int x) {
     return maxNumber;
 }
 
-public static int collatz(int n) {
+public static int collatz(int n, int limit) {
     int length = 1;
-    while (n != 1) {
+    while (n != 1 && length <= limit) {
         if (n % 2 == 0) {
             n /= 2;
         } else {
