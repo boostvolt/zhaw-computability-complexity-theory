@@ -182,11 +182,18 @@ public static int collatz(int n, int[] memo) {
     if (n <= memo.length - 1 && memo[n] != 0) {
         return memo[n];
     }
-    int length;
-    if (n % 2 == 0) {
-        length = collatz(n / 2, memo) + 1;
-    } else {
-        length = collatz(3 * n + 1, memo) + 1;
+    int length = 1;
+    while (n != 1) {
+        if (n % 2 == 0) {
+            n = n / 2;
+        } else {
+            n = 3 * n + 1;
+        }
+        if (n <= memo.length - 1 && memo[n] != 0) {
+            length += memo[n];
+            break;
+        }
+        length++;
     }
     return length;
 }
