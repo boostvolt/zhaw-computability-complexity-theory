@@ -99,7 +99,7 @@ Die Menge aller Collatz-Zahlen bis x = 90'000'000 ist semi-entscheidbar. Dies be
 
 Die Menge aller Collatz-Zahlen P(∞) ist nicht entscheidbar. Dies bedeutet, dass es kein Programm gibt, das alle Collatz-Zahlen berechnen kann. Der Beweis dafür ist ein ungelöstes Problem in der Mathematik, das als Collatz-Vermutung bekannt ist.
 
-7. Beweisen oder widerlegen Sie informell folgende Aussage: ”Die Zeitkomplexität des
+6. Beweisen oder widerlegen Sie informell folgende Aussage: ”Die Zeitkomplexität des
 Collatz-Programmes ist nicht bestimmbar”.
 
 Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, dass es keine Möglichkeit gibt, die Laufzeit des Programms für alle Eingaben zu bestimmen. Die Collatz-Vermutung besagt, dass jede Collatz-Folge irgendwann bei 1 endet, aber es ist nicht bekannt, wie lange es dauert, bis dies geschieht. Da die Länge der Collatz-Folge für jede Zahl zwischen 1 und x berechnet werden muss, ist die Laufzeit des Programms für große Werte von x sehr hoch.
