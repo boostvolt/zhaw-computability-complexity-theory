@@ -1,5 +1,6 @@
-## Aufgabe 1. LOOP-Programme.
+## Aufgabe 1. LOOP-Programme
 Erstellen Sie LOOP-Programme (ohne die Verwendung von Makros), welche folgende Funktionen berechnen:
+
 1. f(x,y)=max(y,y)
 
 ```
@@ -53,6 +54,46 @@ End
 _Hinweis: Bei LOOP Programmen werden negative Zahlen (egal wo) immer und automatisch auf
 0 gesetzt._
 
+## Aufgabe 2. While-Programme
+Geben Sie While-Programme (ohne Loop) an, die folgende Funktionen abbilden (ohne Verwen- dung von Makros)
+
+1. h(x) = Pi xi, x = [x,y,z]
+
+```
+x0 = x1 + 0;
+While x2 > 0 Do
+  x0 = x0 + 1;
+  x2 = x2 - 1
+End;
+While x3 > 0 Do
+  x0 = x0 + 1;
+  x3 = x3 - 1
+End
+```
+
+2. g(n) =↑ (ein While-Programm, welches nie terminiert: Interrupt due to timeout)
+
+```
+While x1 > 0 Do
+  x1 = x1 + 1
+End
+```
+
+3. f(x)= (f(x−1)+x falls x > 1 / 1 sonst
+
+```
+x0 = x0 + 1;
+x2 = x1 - 1;
+While x2 > 0 Do
+  x3 = x1 + 0;
+  While x3 > 0 Do
+    x0 = x0 + 1;
+    x3 = x3 - 1
+  End;
+  x1 = x1 - 1;
+  x2 = x2 - 1
+End
+```
 
 ## Aufgabe 4. Collatz-Zahlen
 P(x) ist ein Programm mit folgender Spezifikation:
