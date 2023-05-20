@@ -160,37 +160,60 @@ Diese Implementierung geht Zahl für Zahl durch und berechnet die Länge der Col
 Hier ist eine Implementierung von P mit Optimierung:
 
 ```java
-public static int P(int x) {
+import java.util.Arrays;
+
+import static java.lang.System.currentTimeMillis;
+
+class P {
+  public static void main(String[] args) {
+    solve(1_000);
+    solve(100_000);
+    solve(1_000_000);
+    solve(5_000_000);
+    solve(10_000_000);
+    solve(90_000_000);
+  }
+
+  private static void solve(int x) {
+    long before = currentTimeMillis();
+    System.out.println(x + ": Result: " + calc(x));
+    long after = currentTimeMillis();
+    System.out.println(x + " took " + (after - before) + " ms");
+  }
+
+  public static int calc(int x) {
     int maxLength = 0;
     int maxNumber = 0;
     long[] memo = new long[x + 1];
     Arrays.fill(memo, -1);
     memo[1] = 1;
     for (int i = 1; i <= x; i++) {
-        long length = collatz(i, memo);
-        memo[i] = length;
-        if (length > maxLength) {
-            maxLength = (int) length;
-            maxNumber = i;
-        }
+      long length = collatz(i, memo);
+      memo[i] = length;
+      if (length > maxLength) {
+        maxLength = (int) length;
+        maxNumber = i;
+      }
     }
     return maxNumber;
-}
+  }
 
-public static long collatz(long n, long[] memo) {
+  public static long collatz(long n, long[] memo) {
     if (n <= memo.length - 1 && memo[(int) n] != -1) {
-        return memo[(int) n];
+      return memo[(int) n];
     }
     long length;
     if (n % 2 == 0) {
-        length = collatz(n / 2, memo) + 1;
+      length = collatz(n / 2, memo) + 1;
     } else {
-        length = collatz(3 * n + 1, memo) + 1;
+      length = collatz(3 * n + 1, memo) + 1;
     }
     if (n <= memo.length - 1) {
-        memo[(int) n] = length;
+      memo[(int) n] = length;
     }
     return length;
+  }
+
 }
 ```
 
