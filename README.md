@@ -1,13 +1,13 @@
 ## Aufgabe 1. LOOP-Programme
 Erstellen Sie LOOP-Programme (ohne die Verwendung von Makros), welche folgende Funktionen berechnen:
 
-1. f(x,y)=max(y,y)
+a) f(x,y)=max(y,y)
 
 ```
 x0 = x2 + 0
 ```
 
-2. g(x,y,z)=10z+|x−3y|
+b) g(x,y,z)=10z+|x−3y|
 
 ```
 Loop 10 Do
@@ -36,7 +36,7 @@ Loop x6 Do
 End
 ```
 
-3. h(x,y)=xy
+c) h(x,y)=xy
 
 ```
 x0 = x0 + 1;
@@ -57,7 +57,7 @@ _Hinweis: Bei LOOP Programmen werden negative Zahlen (egal wo) immer und automat
 ## Aufgabe 2. While-Programme
 Geben Sie While-Programme (ohne Loop) an, die folgende Funktionen abbilden (ohne Verwen- dung von Makros)
 
-1. h(x) = Pi xi, x = [x,y,z]
+a) h(x) = Pi xi, x = [x,y,z]
 
 ```
 x0 = x1 + 0;
@@ -71,7 +71,7 @@ While x3 > 0 Do
 End
 ```
 
-2. g(n) =↑ (ein While-Programm, welches nie terminiert: Interrupt due to timeout)
+b) g(n) =↑ (ein While-Programm, welches nie terminiert: Interrupt due to timeout)
 
 ```
 While x1 > 0 Do
@@ -79,7 +79,7 @@ While x1 > 0 Do
 End
 ```
 
-3. f(x)= (f(x−1)+x falls x > 1 / 1 sonst
+c) f(x)= (f(x−1)+x falls x > 1 / 1 sonst
 
 ```
 x0 = x0 + 1;
@@ -99,7 +99,7 @@ End
 P(x) ist ein Programm mit folgender Spezifikation:
 Bei Eingabe x wird die kleinste natürliche Zahl zurückgegeben, deren Collatz Folge unter den Collatz Folgen aller Zahlen zwischen 1 und x die maximale Länge hat.
 
-1. Schreiben Sie zwei Varianten des Programms P, eines ohne und eines mit Optimie- rungen (bei ”ohne Optimierung” gehen Sie Zahl für Zahl durch und notieren sich jeweils die Länge der Folge). Erläutern Sie kurz Ihre Optimierungsansätze.
+a) Schreiben Sie zwei Varianten des Programms P, eines ohne und eines mit Optimie- rungen (bei ”ohne Optimierung” gehen Sie Zahl für Zahl durch und notieren sich jeweils die Länge der Folge). Erläutern Sie kurz Ihre Optimierungsansätze.
 
 Hier ist eine Implementierung von P ohne Optimierung:
 ```java
@@ -169,7 +169,7 @@ public static int collatz(int n, int[] memo) {
 
 Diese Implementierung verwendet Memoization, um die Länge der Collatz-Folge für jede Zahl zwischen 1 und x zu speichern und erneute Berechnungen zu vermeiden. Die Funktion P gibt die Zahl mit der längsten Collatz-Folge zurück.
 
-2. Berechnen Sie x = 1’000, 10’000, 100’000, 1’000’000, 5’000’000 und 10’000’000 mit beiden Programm-Varianten und zusätzlich 90’000’000 mit der optimierten Variante.
+b) Berechnen Sie x = 1’000, 10’000, 100’000, 1’000’000, 5’000’000 und 10’000’000 mit beiden Programm-Varianten und zusätzlich 90’000’000 mit der optimierten Variante.
 Was ist der Rückgabewert für jedes x?
 Stellen Sie die Unterschiede der Laufzeiten Ihrer beiden Programme grafisch dar. (Die
 grafische Darstellung muss nicht im Code gemacht werden. Ihr könnt z.B. Excel nutzen.)
@@ -188,15 +188,15 @@ Hier sind die Rückgabewerte für die verschiedenen Werte von x:
 
 Die Funktion ohne Optimierung benötigt für x = 90'000'000 zu viel Zeit und Speicherplatz und wurde deshalb nicht ausgeführt. Die optimierte Funktion liefert für x = 90'000'000 den Wert 84'376'143.
 
-3. Ist die Menge aller Collatz-Zahlen bis x = 90’000’000 semi-entscheidbar oder sogar entscheidbar? Begründen Sie Ihre Antwort.
+c) Ist die Menge aller Collatz-Zahlen bis x = 90’000’000 semi-entscheidbar oder sogar entscheidbar? Begründen Sie Ihre Antwort.
 
 Die Menge aller Collatz-Zahlen bis x = 90'000'000 ist semi-entscheidbar. Dies bedeutet, dass es ein Programm gibt, das alle Collatz-Zahlen bis x ausgibt, wenn es eine Collatz-Zahl gibt, die kleiner oder gleich x ist. Das Programm kann einfach alle Zahlen von 1 bis x durchgehen und die Collatz-Folge für jede Zahl berechnen.
 
-5. Ist die Menge aller Collatz-Zahlen P(∞) semi-entscheidbar oder sogar entscheidbar?
+d) Ist die Menge aller Collatz-Zahlen P(∞) semi-entscheidbar oder sogar entscheidbar?
 
 Die Menge aller Collatz-Zahlen P(∞) ist nicht entscheidbar. Dies bedeutet, dass es kein Programm gibt, das alle Collatz-Zahlen berechnen kann. Der Beweis dafür ist ein ungelöstes Problem in der Mathematik, das als Collatz-Vermutung bekannt ist.
 
-6. Beweisen oder widerlegen Sie informell folgende Aussage: ”Die Zeitkomplexität des
+e) Beweisen oder widerlegen Sie informell folgende Aussage: ”Die Zeitkomplexität des
 Collatz-Programmes ist nicht bestimmbar”.
 
 Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, dass es keine Möglichkeit gibt, die Laufzeit des Programms für alle Eingaben zu bestimmen. Die Collatz-Vermutung besagt, dass jede Collatz-Folge irgendwann bei 1 endet, aber es ist nicht bekannt, wie lange es dauert, bis dies geschieht. Da die Länge der Collatz-Folge für jede Zahl zwischen 1 und x berechnet werden muss, ist die Laufzeit des Programms für große Werte von x sehr hoch.
