@@ -73,9 +73,7 @@ public static int collatz(int n, int[] memo) {
 Diese Implementierung verwendet Memoization, um die Länge der Collatz-Folge für jede Zahl zwischen 1 und x zu speichern und erneute Berechnungen zu vermeiden. Die Funktion P gibt die Zahl mit der längsten Collatz-Folge zurück.
 
 2. Berechnen Sie x = 1’000, 10’000, 100’000, 1’000’000, 5’000’000 und 10’000’000 mit beiden Programm-Varianten und zusätzlich 90’000’000 mit der optimierten Variante.
-
 Was ist der Rückgabewert für jedes x?
-
 Stellen Sie die Unterschiede der Laufzeiten Ihrer beiden Programme grafisch dar. (Die
 grafische Darstellung muss nicht im Code gemacht werden. Ihr könnt z.B. Excel nutzen.)
 
