@@ -167,6 +167,7 @@ import static java.lang.System.currentTimeMillis;
 class P {
   public static void main(String[] args) {
     solve(1_000);
+    solve(10_000);
     solve(100_000);
     solve(1_000_000);
     solve(5_000_000);
@@ -253,7 +254,7 @@ Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, d
 
 _Fügen Sie einen Screenshot mit der Ausgabe und den Code in die Abgabe ein._
 
-![MicrosoftTeams-image](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/6af1c419-8cd2-4f2c-9c0d-a993fff61517)
+![MicrosoftTeams-image (3)](https://github.com/boostvolt/zhaw-computability-complexity-theory/assets/51777660/36aba075-85fa-40f3-8a51-f5cff86849be)
 
 ## Aufgabe 5. NP-vollständig
 Ein cleverer Student der ZHAW findet in der Zukunft für ein bekanntes NP-vollständiges Problem P1 einen Lösungsalgorithmus, der nur polynomielle Zeit benötigt. Was würde das bedeuten?
