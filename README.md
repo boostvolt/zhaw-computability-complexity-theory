@@ -227,3 +227,24 @@ Collatz-Programmes ist nicht bestimmbar”.
 Die Zeitkomplexität des Collatz-Programms ist nicht beweisbar. Dies bedeutet, dass es keine Möglichkeit gibt, die Laufzeit des Programms für alle Eingaben zu bestimmen. Die Collatz-Vermutung besagt, dass jede Collatz-Folge irgendwann bei 1 endet, aber es ist nicht bekannt, wie lange es dauert, bis dies geschieht. Da die Länge der Collatz-Folge für jede Zahl zwischen 1 und x berechnet werden muss, ist die Laufzeit des Programms für große Werte von x sehr hoch.
 
 _Fügen Sie einen Screenshot mit der Ausgabe und den Code in die Abgabe ein._
+
+## Aufgabe 5. NP-vollständig
+Ein cleverer Student der ZHAW findet in der Zukunft für ein bekanntes NP-vollständiges Problem P1 einen Lösungsalgorithmus, der nur polynomielle Zeit benötigt. Was würde das bedeuten?
+
+NP-vollständige Probleme sind eine Untermenge von NP.
+
+Wenn nun aber mit dem Lösungsverfahren vom Student der ZHAW ein NP-vollständiges Problem in polynomieller Zeit gelöst werden kann, würde dies bedeuten, dass jede Aufgabe in NP in polynomieller Zeit gelöst werden kann.
+
+Das heißt, dass alle Probleme in NP effizient lösbar wären.
+
+In diesem Fall wäre NP = P.
+
+## Polynomzeit-Verifizierer. 
+Gegeben: Natürliche Zahlen a1, ..., an und b.
+
+Ausgabe: Die Ausgabe ist JA, falls es eine Teilmenge S ⊆ { a1, ..., an } gibt, sodass Pa∈S = b gilt, und sonst NEIN.
+Beschreiben Sie informell einen Polynomzeit-Verifizierer mit einem Zeugen für dieses Problem.
+
+In diesem Fall wäre der Zeuge eine konkrete Menge von Zahlen und eine Zahl b.
+
+Der Verifizierer muss nun nur noch die Menge der Zahlen addieren und überprüfen, ob die Summe mit der Zahl b übereinstimmt.
