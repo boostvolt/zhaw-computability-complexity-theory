@@ -164,6 +164,8 @@ public static int P(int x) {
     int maxLength = 0;
     int maxNumber = 0;
     int[] memo = new int[x + 1];
+    Arrays.fill(memo, -1);
+    memo[1] = 1;
     for (int i = 1; i <= x; i++) {
         int length = collatz(i, memo);
         memo[i] = length;
@@ -176,24 +178,17 @@ public static int P(int x) {
 }
 
 public static int collatz(int n, int[] memo) {
-    if (n == 1) {
-        return 1;
-    }
-    if (n <= memo.length - 1 && memo[n] != 0) {
+    if (n <= memo.length - 1 && memo[n] != -1) {
         return memo[n];
     }
-    int length = 1;
-    while (n != 1) {
-        if (n % 2 == 0) {
-            n = n / 2;
-        } else {
-            n = 3 * n + 1;
-        }
-        if (n <= memo.length - 1 && memo[n] != 0) {
-            length += memo[n];
-            break;
-        }
-        length++;
+    int length;
+    if (n % 2 == 0) {
+        length = collatz(n / 2, memo) + 1;
+    } else {
+        length = collatz(3 * n + 1, memo) + 1;
+    }
+    if (n <= memo.length - 1) {
+        memo[n] = length;
     }
     return length;
 }
