@@ -71,6 +71,7 @@ End
 b) g(n) =↑ (ein While-Programm, welches nie terminiert: Interrupt due to timeout)
 
 ```
+x1 = x1 + 1;
 While x1 > 0 Do
   x1 = x1 + 1
 End
@@ -102,7 +103,7 @@ Angenommen, A ⪯ B gilt, d.h. es gibt eine berechenbare Funktion, die A auf B 
 - Sei f eine berechenbare Funktion, die A auf B abbildet (basierend auf der Annahme A ⪯ B).
 - Nun können wir eine Funktion g definieren, die das Komplement der Ausgaben von f nimmt. Das bedeutet, wenn f(x) = y, dann ist g(x) = ¬y.
 - Es ist offensichtlich, dass g eine berechenbare Funktion ist, da sie einfach die Ausgabe von f negiert.
-- Darüber hinaus bildet g ¬A auf ¬B ab, da wenn x in ¬A liegt, dann liegt f(x) in B (basierend auf A ⪯ B), und folglich ist ¬f(x) = ¬(f(x)) = g(x) in ¬B.
+- Darüber hinaus bildet g ¬A auf ¬B ab, da wenn x in A liegt, dann liegt f(x) in B (basierend auf A ⪯ B), und folglich ist ¬f(x) = ¬(f(x)) = g(x) in ¬B.
 - Daher haben wir gezeigt, dass ¬A ⪯ ¬B gilt, basierend auf der Annahme A ⪯ B.
 - Es ist wichtig, die Voraussetzung A ⪯ B in der Argumentation zu berücksichtigen.
 
@@ -129,7 +130,7 @@ public static int P(int x) {
     int maxLength = 0;
     int maxNumber = 0;
     for (int i = 1; i <= x; i++) {
-        int length = collatz(i);
+        int length = collatz(i, limit);
         if (length > maxLength) {
             maxLength = length;
             maxNumber = i;
@@ -138,9 +139,9 @@ public static int P(int x) {
     return maxNumber;
 }
 
-public static int collatz(int n, int limit) {
+public static int collatz(int n) {
     int length = 1;
-    while (n != 1 && length <= limit) {
+    while (n != 1) {
         if (n % 2 == 0) {
             n /= 2;
         } else {
@@ -215,7 +216,7 @@ class P {
 }
 ```
 
-Diese Implementierung verwendet Memoization, um die Länge der Collatz-Folge für jede Zahl zwischen 1 und x zu speichern und erneute Berechnungen zu vermeiden. Die Funktion P gibt die Zahl mit der längsten Collatz-Folge zurück.
+Diese Implementierung verwendet Memorization, um die Länge der Collatz-Folge für jede Zahl zwischen 1 und x zu speichern und erneute Berechnungen zu vermeiden. Die Funktion P gibt die Zahl mit der längsten Collatz-Folge zurück.
 
 b) Berechnen Sie x = 1’000, 10’000, 100’000, 1’000’000, 5’000’000 und 10’000’000 mit beiden Programm-Varianten und zusätzlich 90’000’000 mit der optimierten Variante.
 Was ist der Rückgabewert für jedes x?
